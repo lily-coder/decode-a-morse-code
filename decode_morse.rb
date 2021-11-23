@@ -1,6 +1,3 @@
-print 'Input your morse code: '
-morse_str = gets.chomp
-
 MORSE_CODE = {
   '.-' => 'A',
   '-...' => 'B',

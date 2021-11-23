@@ -45,5 +45,5 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- special thanks to Microverse for inspiring this project.
+- Special thanks to Microverse for inspiring this project.
 

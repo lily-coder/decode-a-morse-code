@@ -37,3 +37,17 @@ def decode_char(char)
 end
 
 decode_char(values)
+
+puts 'Please enter a sentence'
+input_sentences = gets.chomp
+
+def decode_sentence(sentence)
+  sentences = []
+  actual_sentences = sentence.split(/   /)
+  actual_sentences.each do |actual_sentence|
+    decode_word(actual_sentence)
+  end
+  puts sentences.join
+end
+
+decode_sentence(input_sentences)

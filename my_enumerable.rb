@@ -38,6 +38,22 @@ end
 
 decode_char(values)
 
+puts 'Please enter a group of characters'
+words = gets.chomp
+
+def decode_word(word)
+  actual_word = []
+  array_words = word.split
+  array_words.each do |array_word|
+    MORSE_CODE.each do |key, value|
+      actual_word.push(key) if array_word == value
+    end
+  end
+  puts actual_word.join
+end
+
+decode_word(words)
+
 puts 'Please enter a sentence'
 input_sentences = gets.chomp
 

@@ -1,3 +1,6 @@
+print 'Input your morse code: '
+morse_str = gets.chomp
+
 MORSE_CODE = {
   '.-' => 'A',
   '-...' => 'B',
@@ -35,12 +38,12 @@ def decode_char(str)
   end
 end
 
-def decode_word(str)
-  arr = []
-  str.split.each do |n|
-    arr.push(MORSE_CODE[n])
+def decode_word(morse_str)
+  str = ''
+  morse_str.split.each do |char|
+    str += decode_char(char)
   end
-  arr.join
+  str
 end
 
 def decode(str)
